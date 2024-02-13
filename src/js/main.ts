@@ -1,4 +1,4 @@
-import './css/style.scss'
+import '../css/style.scss'
 
 const elementBtn = document.querySelector('.input-form-btn') as HTMLButtonElement;
 const elementInsert = document.querySelector('.input-form-insert') as HTMLInputElement;
