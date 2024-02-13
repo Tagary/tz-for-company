@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+    .input-form-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .input-form-insert {
+        max-width: unset;
+        margin-right: unset;
+        width: unset;
+    }
+}

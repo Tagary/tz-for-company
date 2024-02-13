@@ -1,0 +1,74 @@
+@import "./variables.scss";
+@import "./font-styles.scss";
+
+:root {
+  box-sizing: border-box;
+}
+.main {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 594px;
+  font-size: 16px;
+  font-family: 'Inter';
+}
+
+.input-form {
+  &-wrapper {
+    margin-bottom: 15px;
+  }
+  &-container {
+    display: flex;
+    align-items: center;
+
+  }
+  &-insert {
+    margin-right: 15px;
+    padding: 18px 25px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    max-width: 394px;
+    width: 100%;
+    &:focus {
+      outline: 0;
+    }
+  }
+  &-valid {
+    border-color: red;
+  }
+  &-btn {
+    background-color: $btn-color;
+    border: unset;
+    padding: 18px 48px;
+    color: $white-color;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 185px;
+    width: 100%;
+    font-family: 'Inter';
+  }
+
+  &-result {
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    background-color: $bg-result;
+    padding: 25px;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &-text {
+    text-align: left;
+    word-break: break-all;
+  }
+  &-delete {
+    background: url('../public/delete.svg');
+    min-width: 25.5px;
+    height: 25.5px;
+    cursor: pointer;
+  }
+}
+
+@import "./media.scss";
